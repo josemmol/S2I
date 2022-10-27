@@ -17,14 +17,9 @@ apt-get install isc-dhcp-server
 # download githup configuration file
 wget $f_dchpd_conf
 
+# copy configuration file to etc directory
+cp dhcpd.conf /etc/dhcp
+
 systemctl restart isc-dhcp-server
 systemctl status isc-dhcp-server
 
-
-#Upload files without root
-scp dhcpd.conf alumnes2i@192.168.1.41:.
-ssh -t alumnes2i@192.168.1.41 'echo "copy files";
-sudo cp dhcpd.conf /etc/dhcp/;
-sudo service isc-dhcp-server restart'
-
-#End script
