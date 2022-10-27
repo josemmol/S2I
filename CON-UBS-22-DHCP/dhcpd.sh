@@ -21,5 +21,3 @@ wget $f_dchpd_conf
 cp dhcpd.conf /etc/dhcp
 
 systemctl restart isc-dhcp-server
-systemctl status isc-dhcp-server
-
