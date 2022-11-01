@@ -7,7 +7,7 @@
 #
 # declare STRING variable
 STRING="Scripts examples install DHCP SERVICE"
-#print variable on a screen
+#print variable on screen
 echo $STRING
 
 # declare variables to download files from private repository
@@ -18,6 +18,8 @@ REPO="S2I"
 PATH="main/CON-UBS-22-DHCP/etc/dhcp/dhcpd.conf"
 f_dchpd_conf="https://raw.githubusercontent.com/$OWNER/$REPO/$PATH"
 
+#print f_dchpd_conf on screen
+echo $f_dchpd_conf
 
 #Install DHCP
 apt-get install isc-dhcp-server
