@@ -12,18 +12,13 @@ STRING="Scripts examples install DHCP SERVICE"
 #print variable on screen
 echo $STRING
 
-apt update -y
 # declare variables to download files from private repository
-#TOKEN=""
-#headerToken="--header Authorization: token $TOKEN"
-apt update -y
-
+TOKEN=""
+headerToken="--header Authorization: token $TOKEN"
 OWNER="josemmol"
 REPO="S2I"
-PATH="main/CON-UBS-22-DHCP/etc/dhcp/dhcpd.conf"
-f_dchpd_conf="https://raw.githubusercontent.com/$OWNER/$REPO/$PATH"
-
-apt update -y
+PATHFILE="main/CON-UBS-22-DHCP/etc/dhcp/dhcpd.conf"
+f_dchpd_conf="https://raw.githubusercontent.com/$OWNER/$REPO/$PATHFILE"
 
 #print f_dchpd_conf on screen
 echo $f_dchpd_conf
