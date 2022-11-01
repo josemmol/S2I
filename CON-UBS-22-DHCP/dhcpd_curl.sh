@@ -1,24 +1,29 @@
 #!/bin/bash
 
-apt update -y
 # Purpose: Config ubuntu DHCP server
 # https://ubuntu.com/server/docs/network-dhcp
 # Author: Jose Maria Madronal GPL v2.0+ (Proxmox script)
 # ------------------------------------------
 #
-#
+
+
 # declare STRING variable
 STRING="Scripts examples install DHCP SERVICE"
 #print variable on screen
 echo $STRING
 
+apt update -y
 # declare variables to download files from private repository
 #TOKEN=""
 #headerToken="--header Authorization: token $TOKEN"
+apt update -y
+
 OWNER="josemmol"
 REPO="S2I"
 PATH="main/CON-UBS-22-DHCP/etc/dhcp/dhcpd.conf"
 f_dchpd_conf="https://raw.githubusercontent.com/$OWNER/$REPO/$PATH"
+
+apt update -y
 
 #print f_dchpd_conf on screen
 echo $f_dchpd_conf
