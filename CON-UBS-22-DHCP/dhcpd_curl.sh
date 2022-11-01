@@ -16,7 +16,7 @@ headerToken="--header \'Authorization: token $TOKEN\'"
 OWNER="josemmol"
 REPO="S2I"
 PATH="main/CON-UBS-22-DHCP/etc/dhcp/dhcpd.conf"
-f_dchpd_conf="https://raw.githubusercontent.com/$OWNER/$REPO/contents/$PATH"
+f_dchpd_conf="https://raw.githubusercontent.com/$OWNER/$REPO/$PATH"
 
 
 #Install DHCP
