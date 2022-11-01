@@ -22,7 +22,7 @@ f_dchpd_conf="https://raw.githubusercontent.com/$OWNER/$REPO/$PATH"
 echo $f_dchpd_conf
 
 #Install DHCP
-apt-get install isc-dhcp-server
+apt install isc-dhcp-server
 
 # download github configuration file
 curl $headerToken \
