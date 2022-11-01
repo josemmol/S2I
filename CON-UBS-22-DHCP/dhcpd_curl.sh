@@ -12,11 +12,12 @@ echo $STRING
 
 # declare variables to download files from private repository
 TOKEN=""
-headerToken="--header 'Authorization: token $TOKEN'"
-OWNER="josemol"
+headerToken="--header \'Authorization: token $TOKEN\'"
+OWNER="josemmol"
 REPO="S2I"
 PATH="main/CON-UBS-22-DHCP/etc/dhcp/dhcpd.conf"
-f_dchpd_conf="https://api.github.com/repos/$OWNER/$REPO/contents/$PATH"
+f_dchpd_conf="https://raw.githubusercontent.com/$OWNER/$REPO/contents/$PATH"
+
 
 #Install DHCP
 apt-get install isc-dhcp-server
