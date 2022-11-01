@@ -24,7 +24,7 @@ echo $f_dchpd_conf
 #Install DHCP
 apt-get install isc-dhcp-server
 
-# download githup configuration file
+# download github configuration file
 curl $headerToken \
      --header 'Accept: application/vnd.github.v3.raw' \
      --remote-name \
