@@ -25,10 +25,8 @@ echo $f_dchpd_conf
 apt install isc-dhcp-server
 
 # download github configuration file
-curl $headerToken \
-     --header 'Accept: application/vnd.github.v3.raw' \
-     --remote-name \
-     --location $f_dchpd_conf
+wget f_dchpd_conf="https://raw.githubusercontent.com/$OWNER/$REPO/$PATH"
+#curl $headerToken --header 'Accept: application/vnd.github.v3.raw' --remote-name --location $f_dchpd_conf
      
 # copy configuration file to etc directory
 cp dhcpd.conf /etc/dhcp
