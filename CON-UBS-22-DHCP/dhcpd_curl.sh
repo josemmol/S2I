@@ -14,7 +14,7 @@ echo $STRING
 
 # declare variables to download files from private repository
 #TOKEN=""
-#headerToken="--header \'Authorization: token $TOKEN\'"
+#headerToken="--header Authorization: token $TOKEN"
 OWNER="josemmol"
 REPO="S2I"
 PATH="main/CON-UBS-22-DHCP/etc/dhcp/dhcpd.conf"
