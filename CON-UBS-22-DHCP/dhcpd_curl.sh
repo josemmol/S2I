@@ -13,8 +13,9 @@ STRING="Scripts examples install DHCP SERVICE"
 echo $STRING
 
 # declare variables to download files from private repository
-TOKEN=""
-headerToken="--header Authorization: token $TOKEN"
+#TOKEN=""
+#headerToken="--header Authorization: token $TOKEN"
+headerToken=""
 OWNER="josemmol"
 REPO="S2I"
 PATHFILE="main/CON-UBS-22-DHCP/etc/dhcp/dhcpd.conf"
