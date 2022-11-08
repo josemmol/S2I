@@ -12,7 +12,6 @@ apt install curl
 
 ## Utilització
 Abans d'utilizar s'ha de descarregar l'script del github, desprès s'ha de donar permisos d'execució a l'script i després executar l'script.
-
 ```
 curl --remote-name -L https://raw.githubusercontent.com/josemmol/S2I/main/CON-UBS-22-DHCP/dhcpd_curl.sh
 chmod 755 dhcpd_curl.sh./dh	
