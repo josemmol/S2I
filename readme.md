@@ -19,3 +19,6 @@ chmod 755 dhcpd_curl.sh./dh
 ./dhcpd_curl.sh 
 ```
 
+## Serveis desplegats
+### CON-UBS-22-DHCP
+Configuració d'un servei DHCP a partir d'un contenidor LXC amb ubuntu instal·lat.
