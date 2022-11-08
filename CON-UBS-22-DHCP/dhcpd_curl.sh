@@ -7,12 +7,12 @@
 #
 
 
-# declare STRING variable
+# Declare STRING variable
 STRING="Scripts examples install DHCP SERVICE"
 #print variable on screen
 echo $STRING
 
-# declare variables to download files from private repository
+# Declare variables to download files from private repository
 #TOKEN=""
 #headerToken="--header Authorization: token $TOKEN"
 headerToken=""
@@ -21,18 +21,22 @@ REPO="S2I"
 PATHFILE="main/CON-UBS-22-DHCP/etc/dhcp/dhcpd.conf"
 f_dchpd_conf="https://raw.githubusercontent.com/$OWNER/$REPO/$PATHFILE"
 
-#print f_dchpd_conf on screen
+# Print f_dchpd_conf on screen
 echo $f_dchpd_conf
 
 #Install DHCP
+echo "Install DHCP"
 apt update -y
 apt install isc-dhcp-server -y
 
-# download github configuration file
+# Download github configuration file
 #wget $f_dchpd_conf
+echo "Get configuration file"
 curl $headerToken -O -L $f_dchpd_conf
 
-# copy configuration file to etc directory
+# Copy configuration file to etc directory
 cp dhcpd.conf /etc/dhcp
 
+# Restart dhcp service
+echo "Restart dhcp service"
 systemctl restart isc-dhcp-server
