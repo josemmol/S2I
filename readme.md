@@ -4,13 +4,13 @@ Aquest és un exemple de com fer un scriprt de instal·lació utilitzant un repo
 En aquest projecte trobam diferentes carpetes les quans es corresponen a diferents sistemes o serveis.
 A cada una de les carpetes es es guarden els scripts de instal·lació i els fitxers de configuració a la carpeta etc.
 
-##Prerequisist
+## Prerequisist
 Abans de començar a utilitzar els scrips per poder baixar els scripts i carpetes de configuació s'ha d'instal·lar el curl. l'avantatges d'utilitzar el 'curl'  es la possibilitat d'accedir als recursos privats.
 ```
 apt install curl
 ```
 
-##Utilització
+## Utilització
 Abans d'utilizar s'ha de descarregar l'script del github i donar permisos.
 
 ```
