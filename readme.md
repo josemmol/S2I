@@ -11,11 +11,10 @@ apt install curl
 ```
 
 ## Utilització
-Abans d'utilizar s'ha de descarregar l'script del github i donar permisos.
+Abans d'utilizar s'ha de descarregar l'script del github, desprès s'ha de donar permisos d'execució a l'script i després executar l'script.
 
 ```
-rm dh*
-wget https://raw.githubusercontent.com/josemmol/S2I/main/CON-UBS-22-DHCP/dhcpd_curl.sh
+curl --remote-name -L https://raw.githubusercontent.com/josemmol/S2I/main/CON-UBS-22-DHCP/dhcpd_curl.sh
 chmod 755 dhcpd_curl.sh./dh	
 ./dhcpd_curl.sh 
 ```
